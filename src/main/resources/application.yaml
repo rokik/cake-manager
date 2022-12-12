@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbcDriver
+    username: sa
+    password:
+    url: jdbc:hsqldb:mem:db
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+
+feign:
+  cake:
+    init:
+      baseUrl: https://gist.githubusercontent.com/hart88/198f29ec5114a3ec3460/raw/8dd19a88f9b8d24c23d9960f3300d0c917a4f07c
+      cakes: /cake.json
